@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Dec 20 12:07:31 2022
+程式功能：泰博水果餐盒自動登記系統
 
 @author: dar
 
