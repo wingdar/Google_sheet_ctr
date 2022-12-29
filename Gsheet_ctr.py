@@ -9,11 +9,11 @@ Created on Tue Dec 20 12:07:31 2022
 需安裝 pip install pygsheets
 """
 import os
-import pygsheets
+import pygsheets # 控制 GOOGLE SHEET 的模組
 import requests
 #==============================================================================
 week_url = [
-  '周一','周二','周三','周四','周五'  
+  '周一','周二','周三','周四','周五'  # 如果不要週間都訂的話，就調整這裡內容
 ]
 #==============================================================================
 #==============================================================================
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     print("Current working directory: {0}".format(os.getcwd()))
     #===================================================================    
         
-    gc = pygsheets.authorize(service_file='./dars-project-1220-42e1f8b20536.json')
+    gc = pygsheets.authorize(service_file='./dars-project-1220-42e1f8b20536.json') #務必要先取得 GOOGLE API
     # 利用 Python 開啟 GoogleSheet
     sht = gc.open_by_url("https://docs.google.com/spreadsheets/d/1gu2r3CSj3awGjhR9SKB-a2oM_AtKkw5QhK5U_d-dxVU/edit#gid=1089820924") #泰博午餐水果訂購 SHEET
     
